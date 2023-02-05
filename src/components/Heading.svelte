@@ -6,13 +6,14 @@
   let imageToPreload = `/assets/background/${num}.jpg`;
 
   function changeBackground() {
-    document.getElementById("changeBackground").classList.add("rotate-180");
-    document.getElementById("background").classList.add("opacity-0");
+    const changeBackgroundEl = document.getElementById("changeBackground");
+    const backgroundEl = document.getElementById("background");
+
+    changeBackgroundEl.classList.add("rotate-180");
+    backgroundEl.classList.add("opacity-0");
 
     setTimeout(() => {
-      document
-        .getElementById("changeBackground")
-        .classList.remove("rotate-180");
+      changeBackgroundEl.classList.remove("rotate-180");
     }, 350);
 
     setTimeout(() => {
@@ -22,7 +23,7 @@
 
       path = `/assets/background/${num}.jpg`;
       imageToPreload = `/assets/background/${num}.jpg`;
-      document.getElementById("background").classList.remove("opacity-0");
+      backgroundEl.classList.remove("opacity-0");
     }, 300);
   }
 </script>

@@ -10,7 +10,7 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-		<link href="https://fonts.cdnfonts.com/css/grotesk" rel="stylesheet">
+		<link rel="stylesheet" href="/assets/fonts/cabinet-grotesk.css" />
                 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -23,16 +23,9 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
 	html {
-		font-family: 'Grotesk', system-ui, sans-serif;
+		font-family: 'CabinetGrotesk-Variable', system-ui, sans-serif;
+		font-weight: 500;
 		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 </style>

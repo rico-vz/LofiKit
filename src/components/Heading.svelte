@@ -6,22 +6,24 @@
   let imageToPreload = `/assets/background/${num}.jpg`;
 
   function changeBackground() {
-    // Rotate the button until the image is loaded
     document.getElementById("changeBackground").classList.add("rotate-180");
+    document.getElementById("background").classList.add("opacity-0");
 
     setTimeout(() => {
       document
         .getElementById("changeBackground")
         .classList.remove("rotate-180");
-    }, 450);
+    }, 350);
 
-    while (path === `/assets/background/${num}.jpg`) {
-      num = Math.floor(Math.random() * 8) + 1;
-    }
-    imageToPreload = `/assets/background/${num}.jpg`;
     setTimeout(() => {
+      while (num === parseInt(path.split("/")[3])) {
+        num = Math.floor(Math.random() * 8) + 1;
+      }
+
       path = `/assets/background/${num}.jpg`;
-    }, 850);
+      imageToPreload = `/assets/background/${num}.jpg`;
+      document.getElementById("background").classList.remove("opacity-0");
+    }, 300);
   }
 </script>
 
@@ -29,13 +31,13 @@
 
 <div
   id="background"
-  class="h-screen w-screen bg-cover bg-center relative z-0 overflow-clip brightness-[.25]"
+  class="h-screen w-screen bg-cover bg-center relative z-0 overflow-clip brightness-[.25] transition-all duration-300"
   style="background-image: url({path});"
 />
 
 <button
   id="changeBackground"
-  class="absolute top-0 left-0 m-5 scale-125 hover:scale-110  font-semibold text-white text-lg md:text-xl opacity-75 transition-all duration-200"
+  class="absolute top-0 left-0 m-5 scale-125 hover:scale-110  font-semibold text-white text-lg md:text-xl opacity-75 transition-all duration-300"
   on:click={changeBackground}
 >
   <svg

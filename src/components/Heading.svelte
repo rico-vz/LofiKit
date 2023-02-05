@@ -21,7 +21,7 @@
     imageToPreload = `/assets/background/${num}.jpg`;
     setTimeout(() => {
       path = `/assets/background/${num}.jpg`;
-    }, 450);
+    }, 850);
   }
 </script>
 

@@ -1,4 +1,5 @@
 # LofiKit
+### Relax, work, or study to lofi.
 
 ## 🚀 Project Structure
 

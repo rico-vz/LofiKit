@@ -1,5 +1,6 @@
 # LofiKit
 ### Relax, work, or study to lofi.
+The FOSS solution to just staying calm.
 
 ## 🚀 Project Structure
 

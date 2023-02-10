@@ -32,7 +32,7 @@
 
 <div
   id="background"
-  class="h-screen w-screen bg-cover bg-center relative z-0 overflow-clip brightness-[.25] transition-all duration-300"
+  class="h-screen w-screen bg-cover bg-center relative z-0 overflow-clip brightness-[.25] transition-all duration-500"
   style="background-image: url({path});"
 />
 

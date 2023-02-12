@@ -177,3 +177,14 @@
     </div>
   </div>
 </div>
+
+<style lang="css">
+  #effectBox {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  #effectBox::-webkit-scrollbar {
+    display: none;
+  }
+</style>

@@ -139,38 +139,40 @@
     </button>
   </div>
 
-  <div
-    id="effectBox"
-    class="mr-6 mt-6 overflow-auto h-40 w-52 bg-white/[.10] rounded-lg before:blur-md hover:cursor-pointer shadow-lg backdrop-blur px-4 py-4 absolute top-0 right-0"
-  >
-    <h3 class="mb-2">Effects</h3>
-    {#each effects as effect}
-      <audio
-        src={`${effect}`}
-        loop
-        bind:volume={effectVolumes[effect].volume}
-        bind:paused={effectVolumes[effect].paused}
-      />
-
-      <div class="mb-4">
-        <p class="text-sm">
-          {effect
-            .split("/")
-            .pop()
-            .replace(/\.[^/.]+$/, "")
-            .replace(/-|_/g, " ")
-            .replace(/\b\w/g, (l) => l.toUpperCase())} volume:
-        </p>
-        <input
-          type="range"
-          class="block w-full mt-2"
-          min="0"
-          max="1"
-          step="0.01"
-          value={effectVolumes[effect].volume}
-          on:input={handleEffectVolumeChange(effect)}
+  <div class="flex flex-col items-center mt-10">
+    <div
+      id="effectBox"
+      class="mt-6 overflow-auto h-40 w-52 bg-white/[.10] rounded-lg before:blur-md hover:cursor-pointer shadow-lg backdrop-blur px-4 py-4 absolute"
+    >
+      <h3 class="mb-2">Effects</h3>
+      {#each effects as effect}
+        <audio
+          src={`${effect}`}
+          loop
+          bind:volume={effectVolumes[effect].volume}
+          bind:paused={effectVolumes[effect].paused}
         />
-      </div>
-    {/each}
+
+        <div class="mb-4">
+          <p class="text-sm">
+            {effect
+              .split("/")
+              .pop()
+              .replace(/\.[^/.]+$/, "")
+              .replace(/-|_/g, " ")
+              .replace(/\b\w/g, (l) => l.toUpperCase())} volume:
+          </p>
+          <input
+            type="range"
+            class="block w-full mt-2 accent-indigo-500 outline-none "
+            min="0"
+            max="1"
+            step="0.01"
+            value={effectVolumes[effect].volume}
+            on:input={handleEffectVolumeChange(effect)}
+          />
+        </div>
+      {/each}
+    </div>
   </div>
 </div>

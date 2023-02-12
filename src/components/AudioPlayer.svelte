@@ -108,11 +108,12 @@
   <div class="flex flex-col items-center mt-10">
     <div class="text-lg font-bold mb-3">Select a genre:</div>
     <select
-      class="bg-white border text-black border-gray-400 rounded p-2"
+      class="bg-white/20 backdrop-blur border focus:text-black text-white border-gray-400/40 rounded-lg p-2"
       on:change={handleGenreSelection}
     >
       {#each genres as genre}
-        <option value={genre} selected={selectedGenre === genre}>{genre}</option
+        <option value={genre} selected={selectedGenre === genre}
+          >{genre.charAt(0).toUpperCase() + genre.slice(1)}</option
         >
       {/each}
     </select>
@@ -129,20 +130,20 @@
       step="0.01"
       value={volume}
       on:input={handleVolumeChange}
-      class="w-64"
+      class="appearance-none h-2 w-64 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full"
     />
     <button
-      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-10 rounded"
+      class="transition mt-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:scale-110  font-semibold text-white py-2 px-4 border rounded-lg text-md md:text-lg"
       on:click={handleNextSong}
     >
       Next song
     </button>
   </div>
 
-  <div class="flex flex-col items-center mt-10">
+  <div class="flex flex-col items-center mt-5">
     <div
       id="effectBox"
-      class="mt-6 overflow-auto h-40 w-52 bg-white/[.10] rounded-lg before:blur-md hover:cursor-pointer shadow-lg backdrop-blur px-4 py-4 absolute"
+      class="mt-6 overflow-scroll h-40 w-52 bg-white/[.10] rounded-lg before:blur-md hover:cursor-pointer shadow-lg backdrop-blur px-4 py-4 absolute"
     >
       <h3 class="mb-2">Effects</h3>
       {#each effects as effect}
@@ -164,7 +165,7 @@
           </p>
           <input
             type="range"
-            class="block w-full mt-2 accent-indigo-500 outline-none "
+            class="appearance-none h-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-none outline-none w-full rounded-lg"
             min="0"
             max="1"
             step="0.01"

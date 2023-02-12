@@ -1,6 +1,6 @@
 <script>
   export let title = "LofiKit";
-  let num = Math.floor(Math.random() * 8) + 1;
+  let num = Math.floor(Math.random() * 18) + 1;
   let path = `/assets/background/${num}.jpg`;
   let imageToPreload = `/assets/background/${num}.jpg`;
 

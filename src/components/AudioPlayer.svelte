@@ -53,7 +53,7 @@
     };
   });
 
-  let num = Math.floor(Math.random() * 19) + 1;
+  let num = Math.floor(Math.random() * 18) + 1;
   let path = `/assets/background/${num}.jpg`;
   let imageToPreload = `/assets/background/${num}.jpg`;
 

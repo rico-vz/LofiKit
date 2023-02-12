@@ -143,7 +143,7 @@
   <div class="flex flex-col items-center mt-5">
     <div
       id="effectBox"
-      class="mt-6 overflow-scroll h-40 w-52 bg-white/[.10] rounded-lg before:blur-md hover:cursor-pointer shadow-lg backdrop-blur px-4 py-4 absolute"
+      class="mt-6 overflow-hidden hover:overflow-auto h-40 w-52 bg-white/[.10] rounded-lg before:blur-md hover:cursor-pointer shadow-lg backdrop-blur px-4 py-4 absolute"
     >
       <h3 class="mb-2">Effects</h3>
       {#each effects as effect}

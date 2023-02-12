@@ -1,4 +1,3 @@
-<!-- Generate a sample svelte component that says hello world -->
 <script>
   export let title = "LofiKit";
   let num = Math.floor(Math.random() * 8) + 1;

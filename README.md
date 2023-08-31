@@ -1,4 +1,4 @@
-# LofiKit
+# Lofi Kit
 ### Relax, work, or study to lofi.
 The FOSS solution to just staying calm.
 
@@ -20,7 +20,7 @@ Inside of LofiKit, you'll see the following folders:
 └── package.json
 ```
 
-LofiKit looks for `.astro`, `.md` or `.sveelte` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+LofiKit looks for `.astro`, `.md` or `.svelte` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro or Svelte components.
 

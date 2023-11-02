@@ -116,7 +116,7 @@ packages:
     resolution: {integrity: sha512-qexepZPH6/dLToI/njxr2FjvyxJU0HBAnQRNzEggF0ok811oSNC6su1DkyW2VKp0TNPbWoujuSbcb1yFOjnAqA==}
     dependencies:
       sitemap: 7.1.1
-      zod: 3.20.2
+      zod: 3.22.4
     dev: false
 
   /@astrojs/svelte@2.0.1(astro@2.0.6)(svelte@3.55.1)(typescript@4.9.5)(vite@4.4.9):
@@ -1129,7 +1129,7 @@ packages:
       vite: 4.4.9
       vitefu: 0.2.4(vite@4.4.9)
       yargs-parser: 21.1.1
-      zod: 3.20.2
+      zod: 3.22.4
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3867,8 +3867,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /zod@3.20.2:
-    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: false
 
   /zwitch@2.0.4:

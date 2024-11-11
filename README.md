@@ -1,3 +1,7 @@
+---
+LOFI KIT IS NO LONGER MAINTAINED - CHECK OUT [PETRICHOIR](https://petrichoir.app/) 
+---
+
 # Lofi Kit
 ### Relax, work, or study to lofi.
 The FOSS solution to just staying calm.
